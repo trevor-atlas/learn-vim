@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<style>
+		  /* Put CSS here and watch your page update as you type */
+			img.image.image {
+				border: none;
+				background: none;
+				box-shadow: none;
+				max-width: 300px
+			}
+			img.image.image.large-image{
+				max-width: 800px
+			}
+
+			li {
+				margin-bottom: 1.6rem
+			}
+		</style>
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<img class="image" src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Vimlogo.svg" />
+					<small>Unix Stars and Celebrities: What Can They Do? Can They Do Things?? Let's Find Out!</small>
+				</section>
+
+				<section>
+					<h3>So what is Vim?</h3>
+					<img class="image large-image" src="https://previews.dropbox.com/p/thumb/AAZ6wifzgAMmIqBlhOxAdZT1b_0Khikde683qj1DGCqQjcL6D168I7qJlrUSwcgnylVQM4aJd3l499y4RseJDGkLm9mvYatpvQwj48vuMjCKAxfnnoHhYj9s3lfz1_0QA2T0JoAYFgn_PwAkLylUDdyiDPZg5EZ9DDhtEDPqxenPPQ-D0G7HSxYGBVjF0KsPFo7ldWAC1rOC6tRx0PkHasRvG8bSYi7afAaQcHD0Z1nKVLPEsBu1org3KGNCT5ZfUGF9vOmDdBuoOTXkcozYu65zbiVEOo-HdeCzZ6H4dsSYDqXngEi3ioTik9-SYvXAM7M2K3v44YHJi2llgMmmkAq2kU56a4_LU8lWUwlRLE68fSjVAbERRxMFZy0r7NfM-4-6LgjXz4tfBpRQSpjOx_Q7lHcW_yNVQM0-SOFJfNOpxw/p.png?size_mode=5" />
+				</section>
+				<section>
+					<p class="fragment fade-in-then-semi-out">Open Source Text editor created in 1991, based on an earlier text editor (vi) created in 1976 for UNIX</p>
+					<p class="fragment fade-in-then-semi-out">Terminal based, but can be hosted in a GUI (more on this later)</p>
+					<p class="fragment fade-in-then-semi-out">Some variation of vim or vi is shipped in ~all *NIX operating systems</p>
+				</section>
+				<section data-markdown>
+					<h3>Vim's reputation</h3>
+					<img src="static/learning-curve.jpg" />
+				</section>
+				<section>
+					<img src="static/IAmDeveloperVim.jpg" />
+				</section>
+				<section>
+					<h3>Vim's reputation: Fair Criticism</h3>
+					<p class="fragment fade-in-then-semi-out">👾 Alien if you're not comfortable in a terminal</p>
+					<p class="fragment fade-in-then-semi-out">💩 Terrible defaults (Bad beginner UX)</p>
+					<p class="fragment fade-in-then-semi-out">🙅 Tough initial learning curve</p>
+				</section>
+				<section>
+					<h3>Vim's reputation: Myths</h3>
+					<p class="fragment fade-in-then-semi-out">👵 Too old to be relevant</p>
+					<p class="fragment fade-in-then-semi-out">📈 Never becomes easy</p>
+					<p class="fragment fade-in-then-semi-out">🤮 Bad UX (neckbeards use this thing!)</p>
+				</section>
+				<section data-markdown>
+					### So why learn Vim?
+				</section>
+				<section data-markdown>
+					## 💰
+					Investing in yourself
+				</section>
+				<section data-markdown>
+					## 💪
+					Refining your toolset
+				</section>
+			</div>
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				controls: false,
+				transition: 'concave',
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
