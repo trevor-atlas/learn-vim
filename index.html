@@ -31,6 +31,15 @@
 			li {
 				margin-bottom: 1.6rem
 			}
+
+     .muted {
+         color: rgba(255,255,255,.4);
+         font-style: italic;
+     }
+     .muted span {
+         color: white;
+         font-style: bold;
+     }
 		</style>
 
 		<!-- Printing and PDF exports -->
@@ -59,31 +68,37 @@
 					<p class="fragment fade-in-then-semi-out">🖥️ Terminal based, but can be hosted in a GUI (more on this later)</p>
 					<p class="fragment fade-in-then-semi-out">🌎 All *NIX based OS ship with some variation of Vim or Vi</p>
 				</section>
+
 				<section>
 					<h3>Vim's reputation</h3>
 					<img src="static/learning-curve.jpg" />
 				</section>
+
 				<section>
 					<img src="static/IAmDeveloperVim.jpg" />
 				</section>
+
 				<section>
 					<h3>Vim's reputation: Fair Criticism</h3>
 					<p class="fragment fade-in-then-semi-out">👾 Alien if you're not comfortable in a terminal</p>
 					<p class="fragment fade-in-then-semi-out">💩 Terrible defaults (Bad beginner UX)</p>
 					<p class="fragment fade-in-then-semi-out">🙅 Tough initial learning curve</p>
 				</section>
+
 				<section>
 					<h3>Vim's reputation: Myths</h3>
 					<p class="fragment fade-in-then-semi-out">👵 Too old to be relevant</p>
 					<p class="fragment fade-in-then-semi-out">📈 Never becomes easy</p>
 					<p class="fragment fade-in-then-semi-out">🤮 Bad UX (neckbeards use this thing!)</p>
 				</section>
+        
 				<section>
 					<h3>So why learn Vim?</h3>
 					<p class="fragment fade-in-then-semi-out">💰 Investing in yourself</p>
 					<p class="fragment fade-in-then-semi-out">💪 Refine your toolset</p>
 					<p class="fragment fade-in-then-semi-out">🕶️ Hard because it's different, different because it's better</p>
 				</section>
+
 				<section>
 					<small class="fragment fade-out">That's the overview, ready to get started?</small>
 					<div class="fragment fade-in-then-out">
@@ -91,10 +106,12 @@
 						<img src="static/mario.gif" />
 					</div>
 				</section>
+
 				<section>
 					Vim is a modal text editor
 					<small>There are many modes, but we will primarily work in 3 of them...</small>
 				</section>
+
 				<section>
 					<h4>Normal</h4>
 					<video loop data-autoplay src="static/normal-mode.webm"></video>
@@ -107,11 +124,69 @@
 					<h4>Visual</h4>
 					<video loop data-autoplay src="static/visual-mode.webm"></video>
 				</section>
-
+        <section>
+            Vim is a language for editing text
+            Once you can speak that language, editing just happens naturally.
+            insert mode
+            w: move forward one 'word'
+            b: move back one 'word'
+            f: find next occurance of a character on the line
+            F: find previous occurance of a character on the line
+            a: after caret
+            i: before caret
+            A: after line
+            I: before line
+            d: delete
+            D: delete to the end of the line
+            dd: delete the whole line
+        </section>
+        <section>
+            motions
+            the main power of vim is in motions. motions are combinations of single commands that work together to perform some action like deleting a word
+        </section>
+        <section>
+            Guess that motion!
+            <ul>
+                <li class="fragment fade-in-then-semi-out">ciw</li>
+                <li class="fragment muted fade-in-then-semi-out"><span>c</span>hange <span>i</span>nside <span>w</span>ord</li>
+                <li class="fragment fade-in-then-out">cf=</li>
+                <li class="fragment fade-in-then-out">ci(</li>
+                <li class="fragment fade-in-then-out">Here's a curveball...</li>
+                <li class="fragment fade-in-then-out">ca"</li>
+            </ul>
+        </section>
+        <section>
+            <ul>
+                <li>diw: what do you think this does?</li>
+                <li>dfX: this one should be easy...</li>
+                <li>ciw: change->inside->word</li>
+                <li>cf): change->to next->closing parent</li>
+                <li>ca{: change->around->braces</li>
+            </ul>
+            <pre>
+            const somefunction = () => ({key: value})
+            </pre>
+        </section>
 				<section>
 					closing slide about speeding up key repeat and remapping caps-lock to esc
-					emphasis on the importance of keyboard control
 				</section>
+        <section>
+            resources for learning vim
+            vimtutor
+        </section>
+        <section>
+            editors with vim integrations
+            jetbrains editors:
+            vscode:
+            sublime text:
+        </section>
+        <section>
+            editors that wrap vim
+            macvim
+            vimr
+            others
+            ...
+        </section>
 			</div>
 		</div>
 
@@ -134,3 +209,5 @@
 		</script>
 	</body>
 </html>
+
+ 
