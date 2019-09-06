@@ -64,7 +64,7 @@
 					<img class="image large-image" src="static/what-is-vim.png" />
 				</section>
 				<section>
-					<p class="fragment fade-in-then-semi-out">💾 Open Source Text editor created in 1991, based on an earlier text editor (Vi) created in 1976 for UNIX</p>
+					<p class="fragment">💾 Open Source Text editor created in 1991, based on an earlier text editor (Vi) created in 1976 for UNIX</p>
 					<p class="fragment fade-in-then-semi-out">🖥️ Terminal based, but can be hosted in a GUI (more on this later)</p>
 					<p class="fragment fade-in-then-semi-out">🌎 All *NIX based OS ship with some variation of Vim or Vi</p>
 				</section>
@@ -125,67 +125,101 @@
 					<video loop data-autoplay src="static/visual-mode.webm"></video>
 				</section>
         <section>
-            Vim is a language for editing text
+            Vim is a language for editing text.
             Once you can speak that language, editing just happens naturally.
-            insert mode
-            w: move forward one 'word'
-            b: move back one 'word'
-            f: find next occurance of a character on the line
-            F: find previous occurance of a character on the line
-            a: after caret
-            i: before caret
-            A: after line
-            I: before line
-            d: delete
-            D: delete to the end of the line
-            dd: delete the whole line
-        </section>
+		</section>
+		<section>
+			<h4>Basic movement</h4>
+			<ul>
+				<li>w: move forward one 'word'</li>
+				<li>b: move back one 'word'</li>
+				<li>j: move down one line</li>
+				<li>k: move up one line</li>
+				<li>h: move left one character</li>
+				<li>l: move right one character</li>
+			</ul>
+		</section>
+		<section>
+			<h4>Insert</h4>
+			<ul>
+				<li>a: after caret</li>
+				<li>i: before caret</li>
+				<li>A: after line</li>
+				<li>I: before line</li>
+			</ul>
+		</section>
+		<section>
+			<h4>Delete</h4>
+				<li>d: delete</li>
+				<li>D: delete to the end of the line</li>
+				<li>dd: delete the whole line</li>
+				<li>x: delete the character at caret</li>
+				<li>X: delete the character before caret</li>
+		</section>
+		<section>
+			<h4>Search</h4>
+				<li>f: find next occurance of a character on the line</li>
+				<li>F: find previous occurance of a character on the line</li>
+				<li>/: search for typed characters in the document</li>
+		</section>
+		<section>
+			<h4></h4>
+			Vim also has a concept of special actions called motions. Motions are combinations of single commands that work together to perform some action like deleting a word
+			Many of these motions are mnemonic and easy to remember.
+		</section>
+
         <section>
-            motions
-            the main power of vim is in motions. motions are combinations of single commands that work together to perform some action like deleting a word
-        </section>
-        <section>
-            Guess that motion!
+            <h4>Guess that motion!</h4>
             <ul>
                 <li class="fragment fade-in-then-semi-out">ciw</li>
                 <li class="fragment muted fade-in-then-semi-out"><span>c</span>hange <span>i</span>nside <span>w</span>ord</li>
-                <li class="fragment fade-in-then-out">cf=</li>
-                <li class="fragment fade-in-then-out">ci(</li>
-                <li class="fragment fade-in-then-out">Here's a curveball...</li>
-                <li class="fragment fade-in-then-out">ca"</li>
+                <li class="fragment fade-in-then-semi-out">cf=</li>
+                <li class="fragment muted fade-in-then-semi-out"><span>c</span>hange (until) <span>f</span>ound <span>=</span> literal =</li>
+                <li class="fragment fade-in-then-semi-out">ci(</li>
+                <li class="fragment muted fade-in-then-semi-out"><span>c</span>hange <span>i</span>nside <span>(</span> pair of ()</li>
             </ul>
-        </section>
+		</section>
+
         <section>
             <ul>
-                <li>diw: what do you think this does?</li>
-                <li>dfX: this one should be easy...</li>
-                <li>ciw: change->inside->word</li>
-                <li>cf): change->to next->closing parent</li>
-                <li>ca{: change->around->braces</li>
+                <li class="fragment fade-in-then-semi-out">diw: What should this do?</li>
+                <li class="fragment muted fade-in-then-semi-out"><span>d</span>elete <span>i</span>nside <span>w</span>ord</li>
+                <li class="fragment fade-in-then-semi-out">dfX: we've seen this before!</li>
+                <li class="fragment muted fade-in-then-semi-out"><span>d</span>elete (until) <span>f</span>ound <span>X</span> literal X</li>
+                <li class="fragment fade-in-then-semi-out">ca{: curve ball!</li>
+                <li class="fragment muted fade-in-then-semi-out"><span>c</span>hange <span>a</span>round <span>{</span> pair of {}</li>
             </ul>
-            <pre>
-            const somefunction = () => ({key: value})
-            </pre>
-        </section>
-				<section>
-					closing slide about speeding up key repeat and remapping caps-lock to esc
-				</section>
+		</section>
+
         <section>
-            resources for learning vim
-            vimtutor
-        </section>
+			<h4>resources for learning vim</h4>
+			<ul>
+				<li><a href="https://vim-adventures.com/">Vim Adventures</a>(browser based game)</li>
+				<li>Vimtutor (vim's built in tutorial)</li>
+				<li><a href="http://vimcasts.org/">Vimcasts </a>(Free screencasts)</li>
+				<li><a href="https://pragprog.com/book/dnvim2/practical-vim-second-edition">Practical Vim</a>(High quality book, not free though 😔)</li>
+				<li><a href="http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html">Vim Cheat Sheet</a>(Unofficial cheat sheet)</li>
+			</ul>
+		</section>
+
         <section>
-            editors with vim integrations
-            jetbrains editors:
-            vscode:
-            sublime text:
-        </section>
+			<h4>Editors With Vim Integrations</h4>
+			<ul>
+				<li>all jetbrains (intellij, webstorm, pycharm)</li>
+				<li>VSCode</li>
+				<li>Sublime Text</li>
+				<li>Many More!</li>
+			</ul>
+		</section>
+
         <section>
-            editors that wrap vim
-            macvim
-            vimr
-            others
-            ...
+			<h4>Editors That Wrap Vim</h4>
+			<ul>
+				<li>Macvim</li>
+				<li>Vimr</li>
+				<li>Vimr</li>
+			</ul>
+			These editors provide a nice UI layer on top of vanilla vim
         </section>
 			</div>
 		</div>
