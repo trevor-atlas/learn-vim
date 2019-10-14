@@ -59,6 +59,10 @@ but they obfuscate a lot of the configuration and when you're learning it's ofte
 - [EverVim](https://github.com/LER0ever/EverVim)
 - [SpaceVim](https://spacevim.org/)
 
+### High Quality Plugins
+
+
+
 ## Start The Slides
 
 1. Serve the presentation and monitor source files for changes
@@ -76,5 +80,3 @@ but they obfuscate a lot of the configuration and when you're learning it's ofte
 - **js/** Like above but for JavaScript
 - **plugin/** Components that have been developed as extensions to reveal.js
 - **lib/** All other third party assets (JavaScript, CSS, fonts)
-
-
