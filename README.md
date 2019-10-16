@@ -61,7 +61,10 @@ but they obfuscate a lot of the configuration and when you're learning it's ofte
 
 ### High Quality Plugins
 
-
+1. fzf https://github.com/junegunn/fzf.vim
+2. lightline https://github.com/itchyny/lightline.vim
+3. surround https://github.com/tpope/vim-surround
+4. NERDTree https://github.com/scrooloose/nerdtree
 
 ## Start The Slides
 
