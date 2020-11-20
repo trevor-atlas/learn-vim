@@ -1596,3 +1596,11 @@ body {
 
 .zoomed .reveal .roll span:after {
   visibility: hidden; }
+
+.reveal em {
+  font-size: 3rem;
+  color: #999;
+  padding: 0 1rem; }
+
+.reveal ul {
+  list-style: none; }

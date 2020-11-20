@@ -75,6 +75,10 @@
 				</section>
 
 				<section>
+					<img src="static/exit-vim.png" />
+				</section>
+
+				<section>
 					<img src="static/IAmDeveloperVim.jpg" />
 				</section>
 
@@ -91,7 +95,7 @@
 					<p class="fragment fade-in-then-semi-out">📈 Never becomes easy</p>
 					<p class="fragment fade-in-then-semi-out">🤮 Bad UX (neckbeards use this thing!)</p>
 				</section>
-        
+
 				<section>
 					<h3>So why learn Vim?</h3>
 					<p class="fragment fade-in-then-semi-out">💰 Investing in yourself</p>
@@ -99,9 +103,9 @@
 					<p class="fragment fade-in-then-semi-out">🕶️ Hard because it's different, different because it's better</p>
 				</section>
 				<section>
-					Vim is a language for editing text, it doesn't care what language you're working in and it's not trying to compete with your favorite editor.
-					Instead Vim provides a framework of commands and movements that enable you to edit text without using a mouse at all.
-					
+					Vim is a method of editing text, it doesn't care what language you're working in and it's not trying to compete with your favorite editor.<br><br>
+
+					Instead Vim provides a framework of commands and movements that enable you to edit text without a mouse.
 				</section>
 
 				<section>
@@ -134,65 +138,78 @@
             Once you can speak that language, editing just happens naturally.
 		</section>
 		<section>
-			<h4>Basic movement</h4>
+			<h3>Basic movement</h3>
 			<ul>
-				<li>w: move forward one 'word'</li>
-				<li>b: move back one 'word'</li>
-				<li>j: move down one line</li>
-				<li>k: move up one line</li>
-				<li>h: move left one character</li>
-				<li>l: move right one character</li>
+				<li><em>w</em> move forward one 'word'</li>
+				<li><em>b</em> move back one 'word'</li>
+				<li><em>j</em> move down one line</li>
+				<li><em>k</em> move up one line</li>
+				<li><em>h</em> move left one character</li>
+				<li><em>l</em> move right one character</li>
+			</ul>
+			<img src="static/hjkl.png" alt="">
+		</section>
+		<section>
+			<h3>Insert</h3>
+			<ul>
+				<li><em>a</em> after caret</li>
+				<li><em>i</em> before caret</li>
+				<li><em>A</em> after line</li>
+				<li><em>I</em> before line</li>
 			</ul>
 		</section>
 		<section>
-			<h4>Insert</h4>
-			<ul>
-				<li>a: after caret</li>
-				<li>i: before caret</li>
-				<li>A: after line</li>
-				<li>I: before line</li>
+			<h3>Delete</h3>
+            <ul>
+				<li><em>d</em> delete</li>
+				<li><em>D</em> delete to the end of the line</li>
+				<li><em>dd</em> delete the whole line</li>
+				<li><em>x</em> delete the character at caret</li>
+				<li><em>X</em> delete the character before caret</li>
 			</ul>
-		</section>
-		<section>
-			<h4>Delete</h4>
-				<li>d: delete</li>
-				<li>D: delete to the end of the line</li>
-				<li>dd: delete the whole line</li>
-				<li>x: delete the character at caret</li>
-				<li>X: delete the character before caret</li>
 		</section>
 		<section>
 			<h4>Search</h4>
-				<li>f: find next occurance of a character on the line</li>
-				<li>F: find previous occurance of a character on the line</li>
-				<li>/: search for typed characters in the document</li>
+			<ul>
+				<li><em>f</em> find next occurance of a character on the line</li>
+				<li><em>F</em> find previous occurance of a character on the line</li>
+				<li><em>/</em> search for typed characters in the document</li>
+			</ul>
 		</section>
 		<section>
-			Vim also has a concept of special actions called motions. Motions are combinations of single commands that work together to perform some action like deleting a word
-			Many of these motions are mnemonic and easy to remember.
+			<p>Vim also has a concept of special actions called motions.</p><br/>
+		</section>
+		<section>
+			<p>Motions are combinations of single commands that work together to perform some action like deleting a word.<br/>
+				Many of these motions are <em>mnemonic</em>and easy to remember.</p>
 		</section>
 
         <section>
             <h4>Guess that motion!</h4>
             <ul>
-                <li class="fragment fade-in-then-semi-out">ciw</li>
+                <li class="fragment fade-in-then-semi-out"><em>ciw</em></li>
                 <li class="fragment muted fade-in-then-semi-out"><span>c</span>hange <span>i</span>nside <span>w</span>ord</li>
-                <li class="fragment fade-in-then-semi-out">cf=</li>
+                <li class="fragment fade-in-then-semi-out"><em>cf=</em></li>
                 <li class="fragment muted fade-in-then-semi-out"><span>c</span>hange (until) <span>f</span>ound <span>=</span> literal =</li>
-                <li class="fragment fade-in-then-semi-out">ci(</li>
+                <li class="fragment fade-in-then-semi-out"><em>ci(</em></li>
                 <li class="fragment muted fade-in-then-semi-out"><span>c</span>hange <span>i</span>nside <span>(</span> pair of ()</li>
             </ul>
 		</section>
 
         <section>
             <ul>
-                <li class="fragment fade-in-then-semi-out">diw: What should this do?</li>
+                <h4>What should these do?</h4>
+				<li class="fragment fade-in-then-semi-out"><em>diw</em></li>
                 <li class="fragment muted fade-in-then-semi-out"><span>d</span>elete <span>i</span>nside <span>w</span>ord</li>
-                <li class="fragment fade-in-then-semi-out">dfX: we've seen this before!</li>
+                <li class="fragment fade-in-then-semi-out"><em>dfX</em></li>
                 <li class="fragment muted fade-in-then-semi-out"><span>d</span>elete (until) <span>f</span>ound <span>X</span> literal X</li>
-                <li class="fragment fade-in-then-semi-out">ca{: curve ball!</li>
+                <li class="fragment fade-in-then-semi-out"><em>ca{</em> curve ball!</li>
                 <li class="fragment muted fade-in-then-semi-out"><span>c</span>hange <span>a</span>round <span>{</span> pair of {}</li>
             </ul>
+		</section>
+		<section>
+			This has been a brief overview of some of the more commonly used features in Vim.
+
 		</section>
 
         <section>
@@ -251,4 +268,4 @@
 	</body>
 </html>
 
- 
+

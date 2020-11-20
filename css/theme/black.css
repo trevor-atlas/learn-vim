@@ -271,3 +271,11 @@ body {
 @media print {
   .backgrounds {
     background-color: #191919; } }
+
+.reveal em {
+  font-size: 3rem;
+  color: #999;
+  padding: 0 1rem; }
+
+.reveal ul {
+  list-style: none; }
